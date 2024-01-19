@@ -1,0 +1,151 @@
+/* the basic styles of the entire text and formating*/
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #444;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/*this is the styling of the menu part of the website the home,naval,ski,techonology buttosm*/
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navigation ul li {
+    float: left;
+}
+
+.navigation ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, background-image 0.5s ease-in-out;
+    background-image: linear-gradient(to right, #333, #333);
+}
+
+.navigation ul li a:hover {/*what colors are gona show up when we are on top of them hovering the grading going from red to black*/
+    background-color: #555;
+    background-image: linear-gradient(to right, #ff0000, #333333);
+}
+
+/* How the entire content will look of the homepage */
+.content {
+    padding: 20px;
+    min-height: 80vh;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+}
+.content img:hover {
+    transform: scale(1.1);
+}
+.content img {
+    width: auto; /* The transition time between it being normal and then bigger*/
+    transition: transform 0.3s ease;
+}
+/* The styling of the footer and how its gona look*/
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .navigation ul li {
+        float: none;
+        width: 100%;
+    }/*this get activated only if the screen is less than 600px*/
+
+}
+/* Where the slider is located*/
+.slider {
+    position: relative;
+    max-width: 600px; 
+    margin: auto;
+    overflow: hidden;
+}
+
+/* This affects all the images inside the  slider and how they function */
+.slider .slides img {
+    width: 100%;
+    display: none;
+}
+
+/* This are the slider buttons anad their color and how they look*/
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(100, 83, 83, 0.83);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+  .country {
+    padding: 20px;
+    min-height: 80vh; /* This are the image and how they fuunction for the speciofic html descpritive websites*/
+}
+
+.country img {
+    max-width: 1024px;
+    min-width: 1024px;
+    height: auto;
+}
+
+.page-navigation {
+    width: 100%;
+    overflow: auto; 
+    padding: 20px 0; 
+}
+
+.prev-page {
+    float: left;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.1s;/*these are the colors and the transition time of the buttons which are in the corners*/
+}
+
+.next-page {
+    float: right; 
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.1s;/*these are the colors and the transition time of the buttons which are in the corners*/
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WWII Ground Advancements</title>
+    <link rel="stylesheet" href="../../Other/Dachevski/styles.css">
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="naval.html">Naval</a></li>
+            <li><a href="air.html">Air</a></li>
+            <li><a href="ground.html">Ground</a></li>
+            <li><a href="technology.html">Technology</a></li>
+        </ul>
+    </div> <!-- Navigation, same as index.html -->
+    <div class="content">
+        <h1>Ground Advancements in World War II</h1>
+        <p>Explore the advancements in ground warfare, including tank development, artillery improvements, and logistics and communication innovations.</p>
+        <div class="slider">
+            <div class="slides">
+                <h2>The best battle ships from the American,Russian and Japanese Navy</h2>
+                <!-- When this image is clicked, navigate to the Naval subsection -->
+                <a href="naval.html">
+                    <img src="../../Images/Dachevski/WW2naval.png" alt="americannaval">
+                </a>
+                <!-- When this image is clicked, navigate to the Air subsection -->
+                <a href="air.html">
+                    <img src="../../Images/Dachevski/WW2air.png" alt="Air Advancements">
+                </a>
+                <!-- When this image is clicked, navigate to the Ground subsection -->
+                <a href="ground.html">
+                    <img src="../../Images/Dachevski/WW2ground.png" alt="Ground Advancements">
+                </a>
+                <!-- When this image is clicked, navigate to the Technology subsection -->
+                <a href="technology.html">
+                    <img src="../../Images/Dachevski/WW2technology.png" alt="Technology Advancements">
+                </a>
+                <!-- Add more images and links as needed -->
+            </div>
+            <button class="slide-btn prev" onclick="moveSlide(-1)"><</button>
+            <button class="slide-btn next" onclick="moveSlide(1)">></button>
+        </div>
+        </table>
+    </div>
+        <!-- Additional content and images -->
+    </div>
+    <a href="homepage.html" class="back-button">Back to Main Page</a>
+    <div class="footer">
+        <!-- Same footer as index.html --> <script>
+    let slideIndex = 0;
+    showSlides(slideIndex);
+
+    function moveSlide(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.querySelectorAll('.slider .slides img');
+        if (n >= slides.length) { slideIndex = 0 }
+        if (n < 0) { slideIndex = slides.length - 1 }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex].style.display = "block";
+    }
+</script>
+    </div>
+    <!-- Footer, same as index.html -->
+</body>
+</html>

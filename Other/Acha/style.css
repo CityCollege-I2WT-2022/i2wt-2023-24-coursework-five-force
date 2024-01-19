@@ -1,0 +1,57 @@
+.medical{
+    text-align: center;
+    color: aliceblue;
+    background-color: #444242;
+}
+body{
+    background-color: #a1a1a1;
+}
+h1{
+    text-align: center;
+     background-color: #848181;
+    border: 2px solid black;
+
+}
+h2{
+    font-size: 20px;
+     background-color: #444242;
+    color: aliceblue;
+        
+}
+#more{
+    background-color: #787878;
+  
+
+}
+h3{
+    color: aliceblue;
+    background-color: #444242;
+}
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-left: 30%;
+}
+ul{
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+color: beige
+}
+li {
+  float: left;
+}
+
+li  {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li :hover {
+  background-color: #111111;
+}

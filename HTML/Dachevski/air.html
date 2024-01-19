@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WWII Air Advancements</title>
+    <link rel="stylesheet" href="../../Other/Dachevski/styles.css">
+</head>
+<body>
+    <div class="navigation">
+        <ul><!--Same as before its just  the menu for how to navigate the website-->
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="naval.html">Naval</a></li>
+            <li><a href="air.html">Air</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="refrences.html">Refrences</a></li>
+        </ul>
+    </div> 
+    <div class="naval"><!--This is changed so that we can function easier because the air naval and tech html files are very similar-->
+        <h1>Air Advancements in World War II</h1>
+        <div class="slider">
+            <div class="slides">
+                <h2>The best fighter planes from  the American,German And English armys</h2>
+                <a href="americanair.html">
+                    <img src="../../Images/Dachevski/americanplane.png" alt="americanplane">
+                </a>
+                <a href="germanair.html">
+                    <img src="../../Images/Dachevski/germanplane1.png" alt="germanplane">
+                </a>
+                <a href="japanair.html">
+                    <img src="../../Images/Dachevski/japaneseplane.png" alt="japanplane">
+                </a>
+                <!--Same as in the homepage its jsut for implementation of pictues and when uu click on said picture is brings u to a realistic pircute of it and some more information-->
+            </div>
+            <button class="slide-btn prev" onclick="moveSlide(-1)"><</button>
+            <button class="slide-btn next" onclick="moveSlide(1)">></button>
+        </div>
+        </table>
+    </div>
+      <div class="page-navigation">
+        <a href="previous_page.html" class="prev-page">Previous</a>
+        <a href="next_page.html" class="next-page">Next</a>
+    </div><!--Navigation of the pages forward back its the same for everysingle html page-->
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.next-page').addEventListener('click', function(event) {
+                event.preventDefault();
+               
+                    window.location.href = 'technology.html'; 
+            });
+            
+            document.querySelector('.prev-page').addEventListener('click', function(event) {
+                event.preventDefault();
+                
+                    window.location.href = 'naval.html'; 
+            });
+        });
+    </script>
+    </div> 
+    <div class="footer">
+        <script>
+            let slidehome = 0;
+            showSlides(slidehome);
+        
+            function moveSlide(n) {
+                showSlides(slidehome += n);
+            }
+        
+            function showSlides(n) {
+                let i;
+                let slides = document.querySelectorAll('.slider .slides img');
+                if (n >= slides.length) { slidehome= 0 }
+                if (n < 0) { slidehome = slides.length - 1 }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slidehome].style.display = "block";
+            }
+        </script>
+        <!--same as in the other pages -->
+    </div>
+</body>
+</html>

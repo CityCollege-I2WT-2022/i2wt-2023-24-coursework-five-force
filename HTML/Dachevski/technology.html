@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WWII Technological Innovations</title>
+    <link rel="stylesheet" href="../../Other/Dachevski/styles.css">
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="naval.html">Naval</a></li>
+            <li><a href="air.html">Air</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="refrences.html">Refrences</a></li>
+        </ul>
+    </div> 
+    <div class="naval"><!--Speical class that isnt impacted by the other ones-->
+        <h1>Technological Advancements in World War II</h1>
+            <div class="slider">
+                <div class="slides">
+                    <h2> Two of the most important technological advancements enigma machine nuclear bomb.</h2>
+                   
+                    <a href="enigma.html">
+                        <img src="../../Images/Dachevski/Enigma.png" alt="Enigma">
+                    </a>
+                    
+                    <a href="nuke.html">
+                        <img src="../../Images/Dachevski/nuke.jpg" alt="nuke">
+                    </a>
+                   <!--Same as the ones before it its just where u implament ur pictures and the subesections of your pictures-->
+                </div>
+                <button class="slide-btn prev" onclick="moveSlide(-1)"><</button>
+                <button class="slide-btn next" onclick="moveSlide(1)">></button>
+            </div>
+        <!--Buttons for the slider-->
+    </div>
+    <div class="page-navigation">
+        <a href="previous_page.html" class="prev-page">Previous</a>
+        <a href="next_page.html" class="next-page">Next</a>
+    </div>
+            <!--Buttons for navigation3-->
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.next-page').addEventListener('click', function(event) {
+                event.preventDefault();
+               
+                    window.location.href = 'homepage.html'; 
+            });
+            
+            document.querySelector('.prev-page').addEventListener('click', function(event) {
+                event.preventDefault();
+                
+                    window.location.href = 'air.html'; 
+            });
+        });
+    </script>
+    <!--Its the script for the buttons-->
+    <script>
+        let slidehome = 0;
+        showSlides(slidehome);
+    
+        function moveSlide(n) {
+            showSlides(slidehome += n);
+        }
+    
+        function showSlides(n) {
+            let i;
+            let slides = document.querySelectorAll('.slider .slides img');
+            if (n >= slides.length) { slidehome= 0 }
+            if (n < 0) { slidehome = slides.length - 1 }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slidehome].style.display = "block";
+        }
+    </script>
+      
+      <!--Script for the slides-->
+
+</div>
+ 
+    <div class="footer"> 
+    </div>
+</body>
+</html>

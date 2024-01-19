@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WWII Technological Advancements</title><!--Title of the subset website-->
+    <link rel="stylesheet" href="../../Other/Dachevski/styles.css"> <!--basic css linakge-->
+</head>
+<body>
+    <div class="navigation"><!--This is for the menu area at the top to scrool between all the sections-->
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="naval.html">Naval</a></li>
+            <li><a href="air.html">Air</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="refrences.html">Refrences</a></li>
+        </ul>
+    </div>
+    <div class="content"><!--The entire content of the home page will be this class-->
+        <h1>Technological Advancements in World War II</h1>
+        <h2>Welcome to the exploration of World War II's technological advancements</h2>
+        <div class="slider"> <!--creation of the slider so we have a moveable feature in website-->
+            <div class="slides">
+               
+                <a href="naval.html">
+                    <img src="../../Images/Dachevski/WW2naval.png" alt="Naval Advancements"> <!--If this picture is clicked it would lead to the naval part of the website-->
+                </a>
+               
+                <a href="air.html">
+                    <img src="../../Images/Dachevski/WW2air.png" alt="Air Advancements"><!--If this picture is clicked it would lead to the air part of the website-->
+                </a>
+                <a href="technology.html">
+                    <img src="../../Images/Dachevski/WW2technology.png" alt="Technology Advancements"><!--If this picture is clicked it would lead to the technology part of the website-->
+                </a>
+             
+            </div>
+            <button class="slide-btn prev" onclick="moveSlide(-1)"><</button>
+            <button class="slide-btn next" onclick="moveSlide(1)">></button> <!--These are the buttons that allow us to go forward and previously on our slider we use >,< as buttons-->
+        </div>
+</div>
+    </div>
+   
+    <!--a script that is needed to for the overall usage of the slider throughout the entire website. -->
+    <script>
+    let slidehome = 0;
+    showSlides(slidehome);
+
+    function moveSlide(n) {
+        showSlides(slidehome += n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.querySelectorAll('.slider .slides img');
+        if (n >= slides.length) { slidehome= 0 }
+        if (n < 0) { slidehome = slides.length - 1 }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; 
+        }
+        slides[slidehome].style.display = "block";
+    }
+</script><!--None is set so its hides all the slides and then block is used incombination with style.display to show you and make the current slide your on sibile<-->
+
+</div>
+<div class="footer"><!--Footer of the homepage-->
+</div>
+    
+</body>
+</html>

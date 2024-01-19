@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WWII Naval Advancements</title>
+    <link rel="stylesheet" href="../../Other/Dachevski/styles.css">
+</head>
+<body>
+    <div class="navigation"><!--Navigation of the menu part of the html file-->
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="naval.html">Naval</a></li>
+            <li><a href="air.html">Air</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="refrences.html">Refrences</a></li>
+        </ul>
+    </div>
+   
+
+    </div>
+    <div class="country"><!--Discriptive html site so it has country to keep eveerythung form crashing-->
+        <h1>Germanys Advancements in WW2</h1>
+       <h2>One of the most techonlogical advancements to come out of WW2 is the german enigma machine. It was the germans main tool for commuincation accross their conquer land.
+        <h2>
+        <p>
+            The Enigma has an electromechanical rotor mechanism that scrambles the 26 letters of the alphabet.
+             In typical use, one person enters text on the Enigma's keyboard and another person writes down which of the 26 lights above the keyboard illuminated at each key press.
+              If plain text is entered, the illuminated letters are the ciphertext.
+               Entering ciphertext transforms it back into readable plaintext. 
+               The rotor mechanism changes the electrical connections between the keys and the lights with each keypress.
+        </p>
+    
+            <img src="../../Images/Dachevski/enigmamachine.jpg" alt="enigma">
+            <div class="page-navigation">
+                <a href="previous_page.html" class="prev-page">Previous</a>
+                <a href="next_page.html" class="next-page">Next</a>
+            </div>
+                <!--This is the buttons-->
+        
+            </div>
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.querySelector('.next-page').addEventListener('click', function(event) {
+                        event.preventDefault();
+                       
+                            window.location.href = 'nuke.html'; 
+                    });
+                    
+                    document.querySelector('.prev-page').addEventListener('click', function(event) {
+                        event.preventDefault();
+                        
+                            window.location.href = 'technology.html'; 
+                    });
+                });
+            </script>
+    
+    </div>
+    
+    </div>
+    <div class="footer"></div>
+        
+</body>
+</html>

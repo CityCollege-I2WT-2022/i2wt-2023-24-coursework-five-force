@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WWII Naval Advancements</title>
+    <link rel="stylesheet" href="../../Other/Dachevski/styles.css">
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="naval.html">Naval</a></li>
+            <li><a href="air.html">Air</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="refrences.html">Refrences</a></li>
+        </ul>
+    </div>
+    <div class="navigation"><!--Same premise as the homepage its function is the same in all the following html pages-->
+    </div>
+    <div class="naval"><!--Different class due to the fact that this slider differs from the one in the homepage because we needed it to fucntion differently, however it will be used in the other subsequent html pages because its needed-->
+        <h1>Naval Advancements in World War II</h1>
+        <div class="slider">
+            <div class="slides">
+                <h2>The best battle ships from the American,Russian and Japanese Navy</h2><!--Short overview of whats going to happen in the slides-->
+
+                <a href="americannaval.html">
+                    <img src="../../Images/Dachevski/USdestroyer.png" alt="americannaval">
+                </a> <!--This code basically puts us onto the first image show and takes us into the american section of the naval army-->
+               
+                <a href="japannaval.html">
+                    <img src="../../Images/Dachevski/JPdestroyer.png" alt="japannaval">
+                </a><!--This code basically puts us onto the second image show and takes us into the japanese section of the naval army-->
+               
+                <a href="russiannaval.html">
+                    <img src="../../Images/Dachevski/RSdestroyer.png" alt="russiannaval">
+                </a><!--This code basically puts us onto the third image show and takes us into the russian section of the naval army-->
+               
+            </div>
+            <button class="slide-btn prev" onclick="moveSlide(-1)"><</button>
+            <button class="slide-btn next" onclick="moveSlide(1)">></button>
+        </div><!--Moves the slides-->
+    </div>
+    <div class="page-navigation">
+        <a href="previous_page.html" class="prev-page">Previous</a><!--This is a class that signals and places a button at the bottom of the website that makes the user go back a page in the left side-->
+        <a href="next_page.html" class="next-page">Next</a><!--This is class that signals and palces a button on the bottom right side of the screen and makes it so that the user go forward a page-->
+    </div>
+    <!--This does not exist on the main page due to the usage of the slider -->
+   
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.next-page').addEventListener('click', function(event) {
+                event.preventDefault();
+               
+                    window.location.href = 'air.html';// This is where the html file goes that makes the page go to the next after io
+            });
+            
+            document.querySelector('.prev-page').addEventListener('click', function(event) {
+                event.preventDefault();
+                
+                    window.location.href = 'homepage.html'; // This is where the html file goes that makes the page go to the one beofre it
+            });
+        });
+    </script>
+          <script>
+            let slidehome = 0; //This is the same as in the homepage 
+            showSlides(slidehome);
+        
+            function moveSlide(n) {
+                showSlides(slidehome += n);
+            }
+        
+            function showSlides(n) {
+                let i;
+                let slides = document.querySelectorAll('.slider .slides img');
+                if (n >= slides.length) { slidehome= 0 }
+                if (n < 0) { slidehome = slides.length - 1 }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slidehome].style.display = "block";
+            }
+        </script><!--None is set so its hides all the slides and then block is used incombination with style.display to show you and make the current slide your on sibile<-->
+   <div class="footer"><!--Footer of the homepage-->
+   </div>
+</body>
+</html>

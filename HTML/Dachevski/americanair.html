@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WWII Naval Advancements</title>
+    <link rel="stylesheet" href="../../Other/Dachevski/styles.css">
+</head>
+<body>
+    <div class="navigation"><!--This is for the menu area at the top to scrool between all the sections-->
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="naval.html">Naval</a></li>
+            <li><a href="air.html">Air</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="refrences.html">Refrences</a></li>
+        </ul>
+    </div>
+
+    
+    </div>
+    <div class="country"><!--This is a different class then the one in the home page and other main subset pages because insed we have styles that are only affecting the insdie of the future pages, these pages are all that are included inside the air,naval and technology parts-->
+        <h1>American Advancements in World War II</h1>
+       <h2>Here is one of the most popular figther planes of the United States military in WW2.The Grumman F6F Hellcat<h2>
+        <p>
+            The F6F-5N night-fighter variant was fitted with an AN/APS-6 radar in a fairing on the outer-starboard wing. 
+            A few standard F6F-5s were also fitted with camera equipment for reconnaissance duties as the F6F-5P.
+            [30] While all F6F-5s were capable of carrying an armament mix of one 20-mm (.79-in) M2 cannon in each of the inboard gun bays (220 rounds per gun), 
+            along with two pairs of .50-in (12.7-mm) machine guns (each with 400 rounds per gun),
+             this configuration was only used on later F6F-5N night fighters.[31] The F6F-5 was the most common F6F variant, with 7,870 being bu
+        </p><!--Short discprition of what the helcat is-->
+    
+            <img src="../../Images/Dachevski/Hellcat.jpg" alt="Hellcat">
+                <!--Imput of the picture-->
+            <div class="page-navigation">
+                <a href="previous_page.html" class="prev-page">Previous</a>
+                <a href="next_page.html" class="next-page">Next</a>
+            </div>
+                <!--The next page and previous page butrtonms and how they fucntion-->
+            </div>
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.querySelector('.next-page').addEventListener('click', function(event) {
+                        event.preventDefault();
+                       
+                            window.location.href = 'germanair.html'; 
+                    });
+                    
+                    document.querySelector('.prev-page').addEventListener('click', function(event) {
+                        event.preventDefault();
+                        
+                            window.location.href = 'air.html'; //same as in the other fiels before it its just puts u either forward or backwards
+                    });
+                });
+            </script>
+    
+    </div>
+    
+    </div>
+    <div class="footer">
+        
+    
+    </div>
+   
+</body>
+</html>
