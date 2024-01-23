@@ -21,16 +21,16 @@ function moveTimeline(direction) {
 }
 
 const backgroundImageMap = {
-    item1: 'url("../../images/Ghanadan/war-1.jpeg")',
-    item2: 'url("../../images/Ghanadan/war-2.jpg")',
-    item3: 'url("../../images/Ghanadan/war-3.jpeg")',
-    item4: 'url("../../images/Ghanadan/war-4.avif")',
-    item5: 'url("../../images/Ghanadan/war-5.jpg")',
-    item6: 'url("../../images/Ghanadan/war-6.jpg")',
-    item7: 'url("../../images/Ghanadan/war-8.jpg")',
-    item8: 'url("../../images/Ghanadan/war-7.jpeg")', 
-    item9: 'url("../../images/Ghanadan/war-9.jpg")',
-    item10: 'url("../../images/Ghanadan/war-10.jpg")',
+    item1: 'url("../../Images/Ghanadan/war-1.jpeg")',
+    item2: 'url("../../Images/Ghanadan/war-2.jpg")',
+    item3: 'url("../../Images/Ghanadan/war-3.jpeg")',
+    item4: 'url("../../Images/Ghanadan/war-4.avif")',
+    item5: 'url("../../Images/Ghanadan/war-5.jpg")',
+    item6: 'url("../../Images/Ghanadan/war-6.jpg")',
+    item7: 'url("../../Images/Ghanadan/war-8.jpg")',
+    item8: 'url("../../Images/Ghanadan/war-7.jpeg")', 
+    item9: 'url("../../Images/Ghanadan/war-9.jpg")',
+    item10: 'url("../../Images/Ghanadan/war-10.jpg")',
 };
 
 const battleDetailsLinksMap = {
