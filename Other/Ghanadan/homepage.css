@@ -20,7 +20,7 @@ body, html {
 .backgroundParticles{
     width: 100%;
     height: 100%;
-    background-image: url('../../images/Ghanadan/background-particles.gif');
+    background-image: url('../../Images/Ghanadan/background-particles.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
